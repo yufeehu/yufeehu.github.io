@@ -22,30 +22,35 @@
     var CONFIG = {"hostname":"yufeehu.github.io","root":"/","scheme":"Pisces","version":"8.0.0-rc.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="自己搭建的第一个博客，欢迎各位小伙伴光临！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Blog">
-<meta property="og:url" content="http://yufeehu.github.io/index.html">
+  <meta name="description" content="VueVue.js是什么Vue (读音 &#x2F;vjuː&#x2F;，类似于 **view**) 是一套用于构建用户界面的**渐进式框架**。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。---[来自Vue官网](https:&#x2F;&#x2F;cn.vuejs.org&#x2F;)MVVM模式的实现者 Model：模型层，在这里表示JavaScr">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vue">
+<meta property="og:url" content="http://yufeehu.github.io/2020/05/30/Vue/index.html">
 <meta property="og:site_name" content="Blog">
-<meta property="og:description" content="自己搭建的第一个博客，欢迎各位小伙伴光临！">
+<meta property="og:description" content="VueVue.js是什么Vue (读音 &#x2F;vjuː&#x2F;，类似于 **view**) 是一套用于构建用户界面的**渐进式框架**。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。---[来自Vue官网](https:&#x2F;&#x2F;cn.vuejs.org&#x2F;)MVVM模式的实现者 Model：模型层，在这里表示JavaScr">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cn.vuejs.org/images/components.png">
+<meta property="article:published_time" content="2020-05-29T16:39:05.246Z">
+<meta property="article:modified_time" content="2020-05-29T16:56:40.986Z">
 <meta property="article:author" content="yufeehu">
+<meta property="article:tag" content="前端">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cn.vuejs.org/images/components.png">
 
-<link rel="canonical" href="http://yufeehu.github.io/">
+<link rel="canonical" href="http://yufeehu.github.io/2020/05/30/Vue/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>Blog</title>
+  <title>Vue | Blog</title>
   
 
 
@@ -186,9 +191,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -204,10 +210,9 @@
       <meta itemprop="name" content="Blog">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/30/Vue/" class="post-title-link" itemprop="url">Vue</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Vue
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -229,7 +234,14 @@
                 </span>
             </span>
 
-          <br>
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
             <span class="post-meta-item" title="本文字数">
               <span class="post-meta-item-icon">
                 <i class="far fa-file-word"></i>
@@ -254,7 +266,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h1><h2 id="Vue-js是什么"><a href="#Vue-js是什么" class="headerlink" title="Vue.js是什么"></a>Vue.js是什么</h2><pre><code>Vue (读音 /vjuː/，类似于 **view**) 是一套用于构建用户界面的**渐进式框架**。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。---[来自Vue官网](https://cn.vuejs.org/)</code></pre><h4 id="MVVM模式的实现者"><a href="#MVVM模式的实现者" class="headerlink" title="MVVM模式的实现者"></a>MVVM模式的实现者</h4><ul>
+        <h1 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h1><h2 id="Vue-js是什么"><a href="#Vue-js是什么" class="headerlink" title="Vue.js是什么"></a>Vue.js是什么</h2><pre><code>Vue (读音 /vjuː/，类似于 **view**) 是一套用于构建用户界面的**渐进式框架**。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。---[来自Vue官网](https://cn.vuejs.org/)</code></pre><h4 id="MVVM模式的实现者"><a href="#MVVM模式的实现者" class="headerlink" title="MVVM模式的实现者"></a>MVVM模式的实现者</h4><ul>
 <li>Model：模型层，在这里表示JavaScript对象</li>
 <li>View：视图层，在这里表示DOM（HTML操作的元素）</li>
 <li>ViewModel：连接视图层和数据的中间件，Vue.js就是MVVM中的ViewModel层的实现者</li>
@@ -391,192 +403,60 @@
 
 <h2 id="计算属性"><a href="#计算属性" class="headerlink" title="计算属性"></a>计算属性</h2><p>待更新。。。</p>
 
-      
     </div>
 
     
     
     
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+        <div class="reward-container">
+  <div></div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yufeehu.github.io/2020/05/28/markdown/">
+  </div>
+</div>
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/hl.jpg">
-      <meta itemprop="name" content="yufeehu">
-      <meta itemprop="description" content="自己搭建的第一个博客，欢迎各位小伙伴光临！">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/28/markdown/" class="post-title-link" itemprop="url">Markdown语法详解</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-05-28 15:51:08 / 修改时间：16:07:04" itemprop="dateCreated datePublished" datetime="2020-05-28T15:51:08+08:00">2020-05-28</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Markdown/" itemprop="url" rel="index"><span itemprop="name">Markdown</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>354</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="Markdown语法详解"><a href="#Markdown语法详解" class="headerlink" title="Markdown语法详解"></a>Markdown语法详解</h1><p>#(空格)+标题名字    —— 几个#就是几级标题</p>
-<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/05/28/markdown/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>yufeehu
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://yufeehu.github.io/2020/05/30/Vue/" title="Vue">http://yufeehu.github.io/2020/05/30/Vue/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+          <div class="post-tags">
+              <a href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag"># 前端</a>
+          </div>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yufeehu.github.io/2020/05/28/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/hl.jpg">
-      <meta itemprop="name" content="yufeehu">
-      <meta itemprop="description" content="自己搭建的第一个博客，欢迎各位小伙伴光临！">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/28/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-05-28 02:15:30 / 修改时间：05:23:15" itemprop="dateCreated datePublished" datetime="2020-05-28T02:15:30+08:00">2020-05-28</time>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>366</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Hello-Hexo"><a href="#Hello-Hexo" class="headerlink" title="Hello Hexo"></a>Hello Hexo</h2><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/05/28/hello-world/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/05/28/markdown/" rel="prev" title="Markdown语法详解">
+      <i class="fa fa-chevron-left"></i> Markdown语法详解
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
       </footer>
+    
   </article>
   
   
-  
-
-
   
 
 
@@ -629,6 +509,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Vue"><span class="nav-number">1.</span> <span class="nav-text">Vue</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Vue-js是什么"><span class="nav-number">1.1.</span> <span class="nav-text">Vue.js是什么</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#MVVM模式的实现者"><span class="nav-number">1.1.0.1.</span> <span class="nav-text">MVVM模式的实现者</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Vue-js的优点"><span class="nav-number">1.1.0.2.</span> <span class="nav-text">Vue.js的优点</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第一个Vue程序"><span class="nav-number">1.2.</span> <span class="nav-text">第一个Vue程序</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#前期准备"><span class="nav-number">1.2.0.1.</span> <span class="nav-text">前期准备</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#IDEA安装Vue插件"><span class="nav-number">1.2.0.1.1.</span> <span class="nav-text">IDEA安装Vue插件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#下载vue-js"><span class="nav-number">1.2.0.1.2.</span> <span class="nav-text">下载vue.js</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#完成实例"><span class="nav-number">1.2.0.2.</span> <span class="nav-text">完成实例</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基本语法"><span class="nav-number">1.3.</span> <span class="nav-text">基本语法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#指令"><span class="nav-number">1.3.0.1.</span> <span class="nav-text">指令</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#绑定事件"><span class="nav-number">1.4.</span> <span class="nav-text">绑定事件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用属性"><span class="nav-number">1.5.</span> <span class="nav-text">常用属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#双向绑定"><span class="nav-number">1.6.</span> <span class="nav-text">双向绑定</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Vue组件"><span class="nav-number">1.7.</span> <span class="nav-text">Vue组件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#组件的组织"><span class="nav-number">1.7.0.1.</span> <span class="nav-text">组件的组织</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#通过-Prop-向子组件传递数据"><span class="nav-number">1.7.0.2.</span> <span class="nav-text">通过 Prop 向子组件传递数据</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关于Prop的一个bug"><span class="nav-number">1.7.0.3.</span> <span class="nav-text">关于Prop的一个bug</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Axios异步通讯"><span class="nav-number">1.8.</span> <span class="nav-text">Axios异步通讯</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#计算属性"><span class="nav-number">1.9.</span> <span class="nav-text">计算属性</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
