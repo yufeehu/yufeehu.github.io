@@ -1,228 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>Hello World</title>
-    <url>/2020/05/28/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Hello-Hexo"><a href="#Hello-Hexo" class="headerlink" title="Hello Hexo"></a>Hello Hexo</h2><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><a id="more"></a>
-
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Markdown语法详解</title>
-    <url>/2020/05/28/markdown/</url>
-    <content><![CDATA[<h1 id="Markdown语法详解"><a href="#Markdown语法详解" class="headerlink" title="Markdown语法详解"></a>Markdown语法详解</h1><p>#(空格)+标题名字    —— 几个#就是几级标题</p>
-<h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><a id="more"></a>
-
-
-<h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><p><strong>Hello,World! **    ——文本左右两边放</strong>就是加粗</p>
-<p><em>Hello,World!</em>    ——文本左右两边放*就是斜体</p>
-<p><strong><em>Hello,World!</em></strong>    ——文本左右两边放***就是斜体且加粗</p>
-<p><del>Hello,World!</del>    ——文本左右两边放~~就是划去</p>
-<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><blockquote>
-<p>我买几个橘子去。你就在此地，不要走动。——引用： &gt;(空格)+文本</p>
-</blockquote>
-<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><hr>
-<p>—或者***</p>
-<hr>
-<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1590605835385&di=c3d372fbf9906a873ad96868a07b31a4&imgtype=0&src=http%3A%2F%2Fa0.att.hudong.com%2F02%2F93%2F01300543893970147279933938013_s.jpg" alt="本地头像">)——!+[描述]+(图片路径)</p>
-<h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><p>[描述]+(链接地址)</p>
-<p><a href="https://www.baidu.com/" target="_blank" rel="noopener">百度一下，全是广告</a></p>
-<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p>有序列表：1.(空格)</p>
-<ol>
-<li>A</li>
-<li>B</li>
-<li>C</li>
-</ol>
-<p>无序列表：-(空格)</p>
-<ul>
-<li>A</li>
-<li>B</li>
-<li>C</li>
-</ul>
-<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><table>
-<thead>
-<tr>
-<th align="left">姓名</th>
-<th>性别</th>
-<th>年龄</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">张三</td>
-<td>男</td>
-<td>18</td>
-</tr>
-</tbody></table>
-<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">hello</span><span class="params">()</span></span>&#123;</span><br><span class="line">    System.out.println(<span class="string">"Hello,World!"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-]]></content>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Vue</title>
+      <link href="/2020/05/29/Vue/"/>
+      <url>/2020/05/29/Vue/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h1><h2 id="Vue-js是什么"><a href="#Vue-js是什么" class="headerlink" title="Vue.js是什么"></a>Vue.js是什么</h2><p>​    Vue (读音 /vjuː/，类似于 <strong>view</strong>) 是一套用于构建用户界面的<strong>渐进式框架</strong>。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。—<a href="https://cn.vuejs.org/" target="_blank" rel="noopener">来自Vue官网</a></p><a id="more"></a><h4 id="MVVM模式的实现者"><a href="#MVVM模式的实现者" class="headerlink" title="MVVM模式的实现者"></a>MVVM模式的实现者</h4><ul><li>Model：模型层，在这里表示JavaScript对象</li><li>View：视图层，在这里表示DOM（HTML操作的元素）</li><li>ViewModel：连接视图层和数据的中间件，Vue.js就是MVVM中的ViewModel层的实现者</li></ul><hr><h4 id="Vue-js的优点"><a href="#Vue-js的优点" class="headerlink" title="Vue.js的优点"></a>Vue.js的优点</h4><ul><li>轻量级，Vue.js压缩后只有20多kb,体积非常小</li><li>移动优先，更适合移动端</li><li>易上手，文档齐全，官网还有手把手教你的视频教程</li><li>吸收了Angular（模块化）和React（虚拟DOM）的长处，并拥有自己独特的功能，如：计算属性</li><li>开源，社区活跃度高</li></ul><hr><h2 id="第一个Vue程序"><a href="#第一个Vue程序" class="headerlink" title="第一个Vue程序"></a>第一个Vue程序</h2><h4 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h4><h5 id="IDEA安装Vue插件"><a href="#IDEA安装Vue插件" class="headerlink" title="IDEA安装Vue插件"></a>IDEA安装Vue插件</h5><p>​    打开idea,依次点击file——settings——Plugins,然后在Marketplace下搜索vue.js并安装，重启ideal；</p><h5 id="下载vue-js"><a href="#下载vue-js" class="headerlink" title="下载vue.js"></a>下载vue.js</h5><p><a href="https://cn.vuejs.org/v2/guide/" target="_blank" rel="noopener">下载地址</a></p><ul><li><p>开发版本</p></li><li><pre><code class="HTML"><span class="comment">&lt;!-- 开发环境版本，包含了有帮助的命令行警告 --&gt;</span><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdn.jsdelivr.net/npm/vue/dist/vue.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span><span class="comment"><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- &#96;&#96;&#96;HTML</span><br><span class="line">  &lt;!-- 生产环境版本，优化了尺寸和速度 --&gt;</span><br><span class="line">  &lt;script src&#x3D;&quot;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;vue&quot;&gt;&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure></span></code></pre></li><li></li><li><p>CDN</p><ul><li><script src="https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.js"></script></li><li><script src="https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js"></script></li></ul></li></ul><h4 id="完成实例"><a href="#完成实例" class="headerlink" title="完成实例"></a>完成实例</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span> <span class="attr">xmlns:v-bind</span>=<span class="string">"http://www.w3.org/1999/xhtml"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Title<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--1.引入Vue.js--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--view层 模板--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">&#123;&#123;message&#125;&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="actionscript">    <span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</span></span><br><span class="line"><span class="actionscript">        el: <span class="string">"#app"</span>,</span></span><br><span class="line"><span class="actionscript">        <span class="comment">//Model层：数据</span></span></span><br><span class="line">        data: &#123;</span><br><span class="line"><span class="actionscript">            message:<span class="string">"hello vue!"</span></span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure><h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><h4 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h4><p>​    指令 (Directives) 是带有 <code>v-</code> 前缀的特殊属性，指令的职责是，当表达式的值改变时，将其产生的连带影响，响应式地作用于 DOM。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">v-bind:title</span>=<span class="string">"message"</span>&gt;</span></span><br><span class="line">       鼠标悬停几秒钟查看此处动态绑定的提示信息！</span><br><span class="line">   <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure><p>​    这里，v-bind指令就是将title特性和Vue实例中的message属性进行绑定。</p><h2 id="绑定事件"><a href="#绑定事件" class="headerlink" title="绑定事件"></a>绑定事件</h2><p>​    可以用 <code>v-on</code> 指令监听 DOM 事件，并在触发时运行一些 JavaScript 代码。下面是<a href="https://cn.vuejs.org/v2/guide/events.html" target="_blank" rel="noopener">Vue官网</a>的一个例子。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"example-1"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">v-on:click</span>=<span class="string">"counter += 1"</span>&gt;</span>Add 1<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>The button above has been clicked &#123;&#123; counter &#125;&#125; times.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> example1 = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  el: <span class="string">'#example-1'</span>,</span><br><span class="line">  data: &#123;</span><br><span class="line">    counter: <span class="number">0</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><p>​    </p><h2 id="常用属性"><a href="#常用属性" class="headerlink" title="常用属性"></a>常用属性</h2><ul><li><p>el属性</p><ul><li>用来指示vue编译器从什么地方开始解析 vue的语法，可以说是一个占位符。</li></ul></li><li><p>data属性</p><ul><li>用来组织从view中抽象出来的属性，可以说将视图的数据抽象出来存放在data中。</li></ul></li><li><p>template属性</p><ul><li>用来设置模板，会替换页面元素，包括占位符。</li></ul></li><li><p>methods属性</p><ul><li>放置页面中的业务逻辑，js方法一般都放置在methods中</li></ul></li><li><p>render属性</p><ul><li>创建真正的Virtual Dom</li></ul></li><li><p>computed属性</p><ul><li>用来计算</li></ul></li><li><p>watch属性</p><ul><li>watch:function(new,old){}</li><li>监听data中数据的变化 </li><li>两个参数，一个返回新值，一个返回旧值</li></ul></li></ul><h2 id="双向绑定"><a href="#双向绑定" class="headerlink" title="双向绑定"></a>双向绑定</h2><p>​    数据双向绑定，就是当Model层的数据发生变化，视图也会随之发生变化；当视图发生变化，Model层的数据同样也会随之发生变化。在Vue中双向绑定的指令是v-model,<code>v-model</code> 指令在表单 <code>&lt;input&gt;</code>、<code>&lt;textarea&gt;</code> 及 <code>&lt;select&gt;</code> 元素上创建双向数据绑定。它会根据控件类型自动选取正确的方法来更新元素。尽管有些神奇，但 <code>v-model</code> 本质上不过是语法糖。它负责监听用户的输入事件以更新数据，并对一些极端场景进行一些特殊处理。下面有一个实例。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span> <span class="attr">xmlns:v-bind</span>=<span class="string">"http://www.w3.org/1999/xhtml"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Title<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--1.引入Vue.js--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--view层 模板--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">    输入文本内容<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">v-model</span>=<span class="string">"message"</span>/&gt;</span>&#123;&#123;message&#125;&#125;</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="actionscript">    <span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</span></span><br><span class="line"><span class="actionscript">        el: <span class="string">"#app"</span>,</span></span><br><span class="line"><span class="actionscript">        <span class="comment">//Model层：数据</span></span></span><br><span class="line">        data: &#123;</span><br><span class="line"><span class="actionscript">            message: <span class="string">""</span></span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure><h2 id="Vue组件"><a href="#Vue组件" class="headerlink" title="Vue组件"></a>Vue组件</h2><p>​    组件是可复用的Vue实例，就是一组可以重复使用的模板。其实就和Thymeleaf模板引擎中的th: fragment=”xxx“类似，</p><p>​    这里有一个 Vue 组件的示例：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hello</span> <span class="attr">v-for</span>=<span class="string">"item in items"</span> <span class="attr">v-bind:hyh</span>=<span class="string">"item"</span>&gt;</span><span class="tag">&lt;/<span class="name">hello</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//定义一个Vue组件component</span></span><br><span class="line">    Vue.component(<span class="string">"hello"</span>,&#123;</span><br><span class="line">        props: [<span class="string">'hyh'</span>],</span><br><span class="line">        <span class="comment">//定义一个模板</span></span><br><span class="line">        template: <span class="string">'&lt;li&gt;&#123;&#123;hyh&#125;&#125;&lt;/li&gt;'</span></span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">        el: <span class="string">"#app"</span>,</span><br><span class="line">        <span class="comment">//Model层：数据</span></span><br><span class="line">        data: &#123;</span><br><span class="line">            items: [<span class="string">'Java'</span>,<span class="string">'PHP'</span>,<span class="string">'Python'</span>]</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br></pre></td></tr></table></figure><h4 id="组件的组织"><a href="#组件的组织" class="headerlink" title="组件的组织"></a>组件的组织</h4><p>​    通常一个应用会以一棵嵌套的组件树的形式来组织：</p><p><img src="https://cn.vuejs.org/images/components.png" alt="Component Tree"></p><p>​    例如，你可能会有页头、侧边栏、内容区等组件，每个组件又包含了其它的像导航链接、博文之类的组件。</p><p>​    为了能在模板中使用，这些组件必须先注册以便 Vue 能够识别。这里有两种组件的注册类型：<strong>全局注册</strong>和<strong>局部注册</strong>。至此，我们的组件都只是通过 <code>Vue.component</code> 全局注册的：</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Vue.component(<span class="string">'my-component-name'</span>, &#123;</span><br><span class="line">  <span class="comment">// ... options ...</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><p>​    全局注册的组件可以用在其被注册之后的任何 (通过 <code>new Vue</code>) 新创建的 Vue 根实例，也包括其组件树中的所有子组件的模板中。</p><h4 id="通过-Prop-向子组件传递数据"><a href="#通过-Prop-向子组件传递数据" class="headerlink" title="通过 Prop 向子组件传递数据"></a>通过 Prop 向子组件传递数据</h4><p>​    Prop 是你可以在组件上注册的一些自定义属性。在上面的示例中，组件注册了一个名为”hyh”的属性，然后将它与数据中的for循环遍历出来的item绑定，在template中响应的是,而不是。可以理解为“hyh”类似于一个形式参数，template不能直接从Model拿数据，需要通过一个中间件。</p><h4 id="关于Prop的一个bug"><a href="#关于Prop的一个bug" class="headerlink" title="关于Prop的一个bug"></a>关于Prop的一个bug</h4><p>​    作者练习时发现，如果使用驼峰式定义props的参数（姑且叫它为参数），template中的数据是不能被渲染到视图层的。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;定义一个Vue组件component</span><br><span class="line">    Vue.component(&quot;hello&quot;,&#123;</span><br><span class="line">        props: [&#39;pHyh&#39;],</span><br><span class="line">        &#x2F;&#x2F;定义一个模板</span><br><span class="line">        template: &#39;&lt;li&gt;&#123;&#123;pHyh&#125;&#125;&lt;&#x2F;li&gt;&#39;</span><br><span class="line">    &#125;);</span><br></pre></td></tr></table></figure><h2 id="Axios异步通讯"><a href="#Axios异步通讯" class="headerlink" title="Axios异步通讯"></a>Axios异步通讯</h2><p>​    Axios是一个开源的可以用在游览器和NodeJs的异步通讯框架，它的主要作用就是实现AJAX异步通讯，其功能特性如下：</p><ul><li>从浏览器中创建XMLHttpRequests</li><li>node.js创建http请求</li><li>支持Promise API</li><li>拦截请求和响应</li><li>转换请求数据和响应数据</li><li>取消请求</li><li>自动换成json数据</li></ul><p><a href="http://www.axios-js.com/" target="_blank" rel="noopener">下载地址</a></p><ul><li><p>CDN</p><ul><li><script src="https://unpkg.com/axios/dist/axios.min.js"></script></li></ul></li></ul><p>​    mounted是编译好的HTML挂载到页面完成后执行的事件钩子此钩子函数中一般会做一些ajax请求获取数据进行数据初始化，所有在mounted函数中通常会用到Axions。</p><p>ps:钩子函数具体见<a href="https://cn.vuejs.org/v2/guide/instance.html" target="_blank" rel="noopener">Vue生命周期图示</a></p><p>示例：</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mounted()&#123;<span class="comment">//钩子函数 链式编程</span></span><br><span class="line">           axios.get(<span class="string">'../data.json'</span>).then(<span class="function"><span class="params">response</span>=&gt;</span>(<span class="keyword">this</span>.info=response.data));</span><br><span class="line">       &#125;</span><br></pre></td></tr></table></figure><h2 id="计算属性"><a href="#计算属性" class="headerlink" title="计算属性"></a>计算属性</h2><p>待更新。。。</p>]]></content>
+      
+      
       <categories>
-        <category>Markdown</category>
+          
+          <category> Vue </category>
+          
       </categories>
-      <tags>
-        <tag>标记语言</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Vue</title>
-    <url>/2020/05/29/Vue/</url>
-    <content><![CDATA[<h1 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h1><h2 id="Vue-js是什么"><a href="#Vue-js是什么" class="headerlink" title="Vue.js是什么"></a>Vue.js是什么</h2><p>​    Vue (读音 /vjuː/，类似于 <strong>view</strong>) 是一套用于构建用户界面的<strong>渐进式框架</strong>。与其它大型框架不同的是，Vue 被设计为可以自底向上逐层应用。Vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合。—<a href="https://cn.vuejs.org/" target="_blank" rel="noopener">来自Vue官网</a></p>
-<h4 id="MVVM模式的实现者"><a href="#MVVM模式的实现者" class="headerlink" title="MVVM模式的实现者"></a>MVVM模式的实现者</h4><ul>
-<li>Model：模型层，在这里表示JavaScript对象</li>
-<li>View：视图层，在这里表示DOM（HTML操作的元素）</li>
-<li>ViewModel：连接视图层和数据的中间件，Vue.js就是MVVM中的ViewModel层的实现者</li>
-</ul>
-<hr>
-<h4 id="Vue-js的优点"><a href="#Vue-js的优点" class="headerlink" title="Vue.js的优点"></a>Vue.js的优点</h4><ul>
-<li>轻量级，Vue.js压缩后只有20多kb,体积非常小</li>
-<li>移动优先，更适合移动端</li>
-<li>易上手，文档齐全，官网还有手把手教你的视频教程</li>
-<li>吸收了Angular（模块化）和React（虚拟DOM）的长处，并拥有自己独特的功能，如：计算属性</li>
-<li>开源，社区活跃度高</li>
-</ul>
-<hr>
-<h2 id="第一个Vue程序"><a href="#第一个Vue程序" class="headerlink" title="第一个Vue程序"></a>第一个Vue程序</h2><h4 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h4><h5 id="IDEA安装Vue插件"><a href="#IDEA安装Vue插件" class="headerlink" title="IDEA安装Vue插件"></a>IDEA安装Vue插件</h5><p>​    打开idea,依次点击file——settings——Plugins,然后在Marketplace下搜索vue.js并安装，重启ideal；</p>
-<h5 id="下载vue-js"><a href="#下载vue-js" class="headerlink" title="下载vue.js"></a>下载vue.js</h5><p><a href="https://cn.vuejs.org/v2/guide/" target="_blank" rel="noopener">下载地址</a></p>
-<ul>
-<li><p>开发版本</p>
-</li>
-<li><pre><code class="HTML"><span class="comment">&lt;!-- 开发环境版本，包含了有帮助的命令行警告 --&gt;</span>
-<span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdn.jsdelivr.net/npm/vue/dist/vue.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>
-<span class="comment"><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">- &#96;&#96;&#96;HTML</span><br><span class="line">  &lt;!-- 生产环境版本，优化了尺寸和速度 --&gt;</span><br><span class="line">  &lt;script src&#x3D;&quot;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;vue&quot;&gt;&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure></span></code></pre>
-</li>
-<li></li>
-<li><p>CDN</p>
-<ul>
-<li><script src="https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.js"></script>
-</li>
-<li><script src="https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js"></script>
-
-</li>
-</ul>
-</li>
-</ul>
-<h4 id="完成实例"><a href="#完成实例" class="headerlink" title="完成实例"></a>完成实例</h4><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span> <span class="attr">xmlns:v-bind</span>=<span class="string">"http://www.w3.org/1999/xhtml"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Title<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--1.引入Vue.js--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--view层 模板--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">	&#123;&#123;message&#125;&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="actionscript">    <span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</span></span><br><span class="line"><span class="actionscript">        el: <span class="string">"#app"</span>,</span></span><br><span class="line"><span class="actionscript">        <span class="comment">//Model层：数据</span></span></span><br><span class="line">        data: &#123;</span><br><span class="line"><span class="actionscript">            message:<span class="string">"hello vue!"</span></span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h2><h4 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h4><p>​    指令 (Directives) 是带有 <code>v-</code> 前缀的特殊属性，指令的职责是，当表达式的值改变时，将其产生的连带影响，响应式地作用于 DOM。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">v-bind:title</span>=<span class="string">"message"</span>&gt;</span></span><br><span class="line">       鼠标悬停几秒钟查看此处动态绑定的提示信息！</span><br><span class="line">   <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>​    这里，v-bind指令就是将title特性和Vue实例中的message属性进行绑定。</p>
-<h2 id="绑定事件"><a href="#绑定事件" class="headerlink" title="绑定事件"></a>绑定事件</h2><p>​    可以用 <code>v-on</code> 指令监听 DOM 事件，并在触发时运行一些 JavaScript 代码。下面是<a href="https://cn.vuejs.org/v2/guide/events.html" target="_blank" rel="noopener">Vue官网</a>的一个例子。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"example-1"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">v-on:click</span>=<span class="string">"counter += 1"</span>&gt;</span>Add 1<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>The button above has been clicked &#123;&#123; counter &#125;&#125; times.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> example1 = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  el: <span class="string">'#example-1'</span>,</span><br><span class="line">  data: &#123;</span><br><span class="line">    counter: <span class="number">0</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-<p>​    </p>
-<h2 id="常用属性"><a href="#常用属性" class="headerlink" title="常用属性"></a>常用属性</h2><ul>
-<li><p>el属性</p>
-<ul>
-<li>用来指示vue编译器从什么地方开始解析 vue的语法，可以说是一个占位符。</li>
-</ul>
-</li>
-<li><p>data属性</p>
-<ul>
-<li>用来组织从view中抽象出来的属性，可以说将视图的数据抽象出来存放在data中。</li>
-</ul>
-</li>
-<li><p>template属性</p>
-<ul>
-<li>用来设置模板，会替换页面元素，包括占位符。</li>
-</ul>
-</li>
-<li><p>methods属性</p>
-<ul>
-<li>放置页面中的业务逻辑，js方法一般都放置在methods中</li>
-</ul>
-</li>
-<li><p>render属性</p>
-<ul>
-<li>创建真正的Virtual Dom</li>
-</ul>
-</li>
-<li><p>computed属性</p>
-<ul>
-<li>用来计算</li>
-</ul>
-</li>
-<li><p>watch属性</p>
-<ul>
-<li>watch:function(new,old){}</li>
-<li>监听data中数据的变化 </li>
-<li>两个参数，一个返回新值，一个返回旧值</li>
-</ul>
-</li>
-</ul>
-<h2 id="双向绑定"><a href="#双向绑定" class="headerlink" title="双向绑定"></a>双向绑定</h2><p>​    数据双向绑定，就是当Model层的数据发生变化，视图也会随之发生变化；当视图发生变化，Model层的数据同样也会随之发生变化。在Vue中双向绑定的指令是v-model,<code>v-model</code> 指令在表单 <code>&lt;input&gt;</code>、<code>&lt;textarea&gt;</code> 及 <code>&lt;select&gt;</code> 元素上创建双向数据绑定。它会根据控件类型自动选取正确的方法来更新元素。尽管有些神奇，但 <code>v-model</code> 本质上不过是语法糖。它负责监听用户的输入事件以更新数据，并对一些极端场景进行一些特殊处理。下面有一个实例。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span> <span class="attr">xmlns:v-bind</span>=<span class="string">"http://www.w3.org/1999/xhtml"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Title<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--1.引入Vue.js--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--view层 模板--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">    输入文本内容<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">v-model</span>=<span class="string">"message"</span>/&gt;</span>&#123;&#123;message&#125;&#125;</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="actionscript">    <span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</span></span><br><span class="line"><span class="actionscript">        el: <span class="string">"#app"</span>,</span></span><br><span class="line"><span class="actionscript">        <span class="comment">//Model层：数据</span></span></span><br><span class="line">        data: &#123;</span><br><span class="line"><span class="actionscript">            message: <span class="string">""</span></span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="Vue组件"><a href="#Vue组件" class="headerlink" title="Vue组件"></a>Vue组件</h2><p>​    组件是可复用的Vue实例，就是一组可以重复使用的模板。其实就和Thymeleaf模板引擎中的th: fragment=”xxx“类似，</p>
-<p>​    这里有一个 Vue 组件的示例：</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"app"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">hello</span> <span class="attr">v-for</span>=<span class="string">"item in items"</span> <span class="attr">v-bind:hyh</span>=<span class="string">"item"</span>&gt;</span><span class="tag">&lt;/<span class="name">hello</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">//定义一个Vue组件component</span></span><br><span class="line">    Vue.component(<span class="string">"hello"</span>,&#123;</span><br><span class="line">        props: [<span class="string">'hyh'</span>],</span><br><span class="line">        <span class="comment">//定义一个模板</span></span><br><span class="line">        template: <span class="string">'&lt;li&gt;&#123;&#123;hyh&#125;&#125;&lt;/li&gt;'</span></span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">        el: <span class="string">"#app"</span>,</span><br><span class="line">        <span class="comment">//Model层：数据</span></span><br><span class="line">        data: &#123;</span><br><span class="line">            items: [<span class="string">'Java'</span>,<span class="string">'PHP'</span>,<span class="string">'Python'</span>]</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br></pre></td></tr></table></figure>
-
-<h4 id="组件的组织"><a href="#组件的组织" class="headerlink" title="组件的组织"></a>组件的组织</h4><p>​    通常一个应用会以一棵嵌套的组件树的形式来组织：</p>
-<p><img src="https://cn.vuejs.org/images/components.png" alt="Component Tree"></p>
-<p>​    例如，你可能会有页头、侧边栏、内容区等组件，每个组件又包含了其它的像导航链接、博文之类的组件。</p>
-<p>​    为了能在模板中使用，这些组件必须先注册以便 Vue 能够识别。这里有两种组件的注册类型：<strong>全局注册</strong>和<strong>局部注册</strong>。至此，我们的组件都只是通过 <code>Vue.component</code> 全局注册的：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">Vue.component(<span class="string">'my-component-name'</span>, &#123;</span><br><span class="line">  <span class="comment">// ... options ...</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-<p>​    全局注册的组件可以用在其被注册之后的任何 (通过 <code>new Vue</code>) 新创建的 Vue 根实例，也包括其组件树中的所有子组件的模板中。</p>
-<h4 id="通过-Prop-向子组件传递数据"><a href="#通过-Prop-向子组件传递数据" class="headerlink" title="通过 Prop 向子组件传递数据"></a>通过 Prop 向子组件传递数据</h4><p>​    Prop 是你可以在组件上注册的一些自定义属性。在上面的示例中，组件注册了一个名为”hyh”的属性，然后将它与数据中的for循环遍历出来的item绑定，在template中响应的是,而不是。可以理解为“hyh”类似于一个形式参数，template不能直接从Model拿数据，需要通过一个中间件。</p>
-<h4 id="关于Prop的一个bug"><a href="#关于Prop的一个bug" class="headerlink" title="关于Prop的一个bug"></a>关于Prop的一个bug</h4><p>​    作者练习时发现，如果使用驼峰式定义props的参数（姑且叫它为参数），template中的数据是不能被渲染到视图层的。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;定义一个Vue组件component</span><br><span class="line">    Vue.component(&quot;hello&quot;,&#123;</span><br><span class="line">        props: [&#39;pHyh&#39;],</span><br><span class="line">        &#x2F;&#x2F;定义一个模板</span><br><span class="line">        template: &#39;&lt;li&gt;&#123;&#123;pHyh&#125;&#125;&lt;&#x2F;li&gt;&#39;</span><br><span class="line">    &#125;);</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="Axios异步通讯"><a href="#Axios异步通讯" class="headerlink" title="Axios异步通讯"></a>Axios异步通讯</h2><p>​    Axios是一个开源的可以用在游览器和NodeJs的异步通讯框架，它的主要作用就是实现AJAX异步通讯，其功能特性如下：</p>
-<ul>
-<li>从浏览器中创建XMLHttpRequests</li>
-<li>node.js创建http请求</li>
-<li>支持Promise API</li>
-<li>拦截请求和响应</li>
-<li>转换请求数据和响应数据</li>
-<li>取消请求</li>
-<li>自动换成json数据</li>
-</ul>
-<p><a href="http://www.axios-js.com/" target="_blank" rel="noopener">下载地址</a></p>
-<ul>
-<li><p>CDN</p>
-<ul>
-<li><script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
-</li>
-</ul>
-</li>
-</ul>
-<p>​    mounted是编译好的HTML挂载到页面完成后执行的事件钩子此钩子函数中一般会做一些ajax请求获取数据进行数据初始化，所有在mounted函数中通常会用到Axions。</p>
-<p>ps:钩子函数具体见<a href="https://cn.vuejs.org/v2/guide/instance.html" target="_blank" rel="noopener">Vue生命周期图示</a></p>
-<p>示例：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">mounted()&#123;<span class="comment">//钩子函数 链式编程</span></span><br><span class="line">           axios.get(<span class="string">'../data.json'</span>).then(<span class="function"><span class="params">response</span>=&gt;</span>(<span class="keyword">this</span>.info=response.data));</span><br><span class="line">       &#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="计算属性"><a href="#计算属性" class="headerlink" title="计算属性"></a>计算属性</h2><p>待更新。。。</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 前端 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Markdown语法详解</title>
+      <link href="/2020/05/28/markdown/"/>
+      <url>/2020/05/28/markdown/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Markdown语法详解"><a href="#Markdown语法详解" class="headerlink" title="Markdown语法详解"></a>Markdown语法详解</h1><p>#(空格)+标题名字    —— 几个#就是几级标题</p><h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><a id="more"></a><h2 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h2><p><strong>Hello,World! **    ——文本左右两边放</strong>就是加粗</p><p><em>Hello,World!</em>    ——文本左右两边放*就是斜体</p><p><strong><em>Hello,World!</em></strong>    ——文本左右两边放***就是斜体且加粗</p><p><del>Hello,World!</del>    ——文本左右两边放~~就是划去</p><h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><blockquote><p>我买几个橘子去。你就在此地，不要走动。——引用： &gt;(空格)+文本</p></blockquote><h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><hr><p>—或者***</p><hr><h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1590605835385&di=c3d372fbf9906a873ad96868a07b31a4&imgtype=0&src=http%3A%2F%2Fa0.att.hudong.com%2F02%2F93%2F01300543893970147279933938013_s.jpg" alt="本地头像">)——!+[描述]+(图片路径)</p><h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><p>[描述]+(链接地址)</p><p><a href="https://www.baidu.com/" target="_blank" rel="noopener">百度一下，全是广告</a></p><h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p>有序列表：1.(空格)</p><ol><li>A</li><li>B</li><li>C</li></ol><p>无序列表：-(空格)</p><ul><li>A</li><li>B</li><li>C</li></ul><h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><table><thead><tr><th align="left">姓名</th><th>性别</th><th>年龄</th></tr></thead><tbody><tr><td align="left">张三</td><td>男</td><td>18</td></tr></tbody></table><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">hello</span><span class="params">()</span></span>&#123;</span><br><span class="line">    System.out.println(<span class="string">"Hello,World!"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
       <categories>
-        <category>Vue</category>
+          
+          <category> Markdown </category>
+          
       </categories>
-      <tags>
-        <tag>前端</tag>
-      </tags>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> 标记语言 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2020/05/28/hello-world/"/>
+      <url>/2020/05/28/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Hello-Hexo"><a href="#Hello-Hexo" class="headerlink" title="Hello Hexo"></a>Hello Hexo</h2><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><a id="more"></a><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
 </search>
